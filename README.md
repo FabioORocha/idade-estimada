@@ -1,24 +1,18 @@
-# sv
+🧠 Estimador de Idade com Debounce usando SvelteKit
+Este é um pequeno projeto feito com SvelteKit e JavaScript, que permite ao usuário digitar um nome e consultar a idade estimada para ele usando a API pública Agify.io. A requisição só é feita com debounce de 1000ms, evitando chamadas excessivas. O campo de busca é sincronizado com a URL via query string (?name=joao), utilizando a função load() do SvelteKit para pré-carregar os dados da API.
 
-## Developing
+🚀 Tecnologias usadas
+SvelteKit
+JavaScript
+API pública Agify.io
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+📦 Instalação e execução
+1.Instale as dependências
+npm install
 
-```bash
+2. Rode o projeto localmente
 npm run dev
+Acesse http://localhost:5173 no navegador.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+🔓 API usada
+Endpoint: https://api.agify.io?name=SEUNOME
